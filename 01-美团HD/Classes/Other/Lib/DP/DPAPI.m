@@ -52,6 +52,9 @@ typedef void (^DPBlock) (id result, NSError * error);
  *  @param error   错误信息
 */
 - (void)request:(DPRequest *)request didFailWithError:(NSError *)error {
+    
+    //*failure是别人传进来的，有可能没值 */
+    
     if(request.failure){
         request.failure(error);
     }
