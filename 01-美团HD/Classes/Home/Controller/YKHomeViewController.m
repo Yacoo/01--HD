@@ -7,7 +7,8 @@
 //
 
 #import "YKHomeViewController.h"
-#import "YKBarButtonItemTool.h"
+#import "UIBarButtonItem+Extension.h"
+#import "YKHomeTopItem.h"
 
 @interface YKHomeViewController ()
 
@@ -40,7 +41,33 @@ static NSString * const reuseIdentifier = @"Cell";
 //    UIImage * image = [UIImage imageNamed:@"icon_meituan_logo"];
 //    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     //只如下写法美团logo是蓝色，图片被渲染了，为避免这种情况有两种方法，第一，添加如上代码， 第二，在图片设置中选择 render as origin.
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_meituan_logo"] style:UIBarButtonItemStylePlain target:nil action:nil];
+    UIBarButtonItem * logoItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_meituan_logo"] style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    //类别
+    YKHomeTopItem * categoryTopItem = [YKHomeTopItem item];
+    UIBarButtonItem * categoryItem = [[UIBarButtonItem alloc] initWithCustomView:categoryTopItem];
+    [categoryTopItem.iconButton setImage:[UIImage imageNamed:@"icon_category_-1"] forState:UIControlStateNormal];
+    [categoryTopItem.iconButton setImage:[UIImage imageNamed:@"icon_category_highlighted_-1"] forState:UIControlStateHighlighted];
+    categoryTopItem.titleLabel.text = @"全部分类";
+    categoryTopItem.subTitleLabel.text = nil;
+    
+    //区域
+    YKHomeTopItem * districtTopItem = [YKHomeTopItem item];
+    UIBarButtonItem * districtItem = [[UIBarButtonItem alloc] initWithCustomView:districtTopItem];
+    [districtTopItem.iconButton setImage:[UIImage imageNamed:@"icon_district"] forState:UIControlStateNormal];
+    [districtTopItem.iconButton setImage:[UIImage imageNamed:@"icon_district_highlighted"] forState:UIControlStateHighlighted];
+    districtTopItem.titleLabel.text = nil;
+    districtTopItem.subTitleLabel.text = nil;
+   
+    
+    //排序
+    YKHomeTopItem * sortTopItem = [YKHomeTopItem item];
+    UIBarButtonItem * sortItem = [[UIBarButtonItem alloc] initWithCustomView:sortTopItem];
+    [sortTopItem.iconButton setImage:[UIImage imageNamed:@"icon_sort"] forState:UIControlStateNormal];
+    [sortTopItem.iconButton setImage:[UIImage imageNamed:@"icon_sort_highlighted"] forState:UIControlStateHighlighted];
+    sortTopItem.titleLabel.text = @"排序";
+    sortTopItem.subTitleLabel.text = nil;
+    self.navigationItem.leftBarButtonItems = @[logoItem,categoryItem,districtItem,sortItem];
 }
 
 /**
@@ -51,12 +78,12 @@ static NSString * const reuseIdentifier = @"Cell";
    // UIImageView也有高亮图片
     //search
     
-    UIBarButtonItem * searchItem = [YKBarButtonItemTool itemWithImage:@"icon_search" highImage:@"icon_search_highlighted" target:self action:@selector(searchClick)];
+    UIBarButtonItem * searchItem = [UIBarButtonItem itemWithImage:@"icon_search" highImage:@"icon_search_highlighted" target:self action:@selector(searchClick)];
     searchItem.customView.mj_width = 50;
     
     //map
     
-     UIBarButtonItem * mapItem = [YKBarButtonItemTool itemWithImage:@"icon_map" highImage:@"icon_map_highlighted" target:self action:@selector(mapClick)];
+     UIBarButtonItem * mapItem = [UIBarButtonItem itemWithImage:@"icon_map" highImage:@"icon_map_highlighted" target:self action:@selector(mapClick)];
     mapItem.customView.mj_width = 50;
     self.navigationItem.rightBarButtonItems = @[mapItem,searchItem];
 }
