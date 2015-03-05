@@ -10,11 +10,9 @@
 
 @interface YKHomeTopItem : UIView
 + (instancetype)item;
-/**标题*/
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-/**子标题*/
-@property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
-/**图标按钮*/
-@property (weak, nonatomic) IBOutlet UIButton *iconButton;
 
+- (void)setTitle:(NSString *)title;
+- (void)setSubTitle:(NSString *)subTitle;
+- (void)setIcon:(NSString *)icon highIcon:(NSString *)highIcon;
+- (void)addTarget:(id)target action:(SEL)action;
 @end

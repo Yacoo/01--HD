@@ -9,9 +9,17 @@
 #import "YKHomeViewController.h"
 #import "UIBarButtonItem+Extension.h"
 #import "YKHomeTopItem.h"
+#import "YKSortViewController.h"
+#import "YKDistrictViewController.h"
+#import "YKCategoryViewController.h"
 
 @interface YKHomeViewController ()
-
+/** 类别item */
+@property (nonatomic, strong)UIBarButtonItem * categoryItem;
+/** 区域item */
+@property (nonatomic, strong)UIBarButtonItem * districtItem;
+/** 分类item */
+@property (nonatomic, strong)UIBarButtonItem * sortItem;
 @end
 
 @implementation YKHomeViewController
@@ -45,29 +53,30 @@ static NSString * const reuseIdentifier = @"Cell";
     
     //类别
     YKHomeTopItem * categoryTopItem = [YKHomeTopItem item];
-    UIBarButtonItem * categoryItem = [[UIBarButtonItem alloc] initWithCustomView:categoryTopItem];
-    [categoryTopItem.iconButton setImage:[UIImage imageNamed:@"icon_category_-1"] forState:UIControlStateNormal];
-    [categoryTopItem.iconButton setImage:[UIImage imageNamed:@"icon_category_highlighted_-1"] forState:UIControlStateHighlighted];
-    categoryTopItem.titleLabel.text = @"全部分类";
-    categoryTopItem.subTitleLabel.text = nil;
+    
+    [categoryTopItem setIcon:@"icon_category_-1" highIcon:@"icon_category_highlighted_-1"];
+    categoryTopItem.title = @"全部分类";
+    categoryTopItem.subTitle = nil;
+    [categoryTopItem addTarget:self action:@selector(categoryClick)];
+    self.categoryItem = [[UIBarButtonItem alloc] initWithCustomView:categoryTopItem];
     
     //区域
     YKHomeTopItem * districtTopItem = [YKHomeTopItem item];
-    UIBarButtonItem * districtItem = [[UIBarButtonItem alloc] initWithCustomView:districtTopItem];
-    [districtTopItem.iconButton setImage:[UIImage imageNamed:@"icon_district"] forState:UIControlStateNormal];
-    [districtTopItem.iconButton setImage:[UIImage imageNamed:@"icon_district_highlighted"] forState:UIControlStateHighlighted];
-    districtTopItem.titleLabel.text = nil;
-    districtTopItem.subTitleLabel.text = nil;
-   
+    [districtTopItem setIcon:@"icon_district" highIcon:@"icon_district_highlighted"];
+    districtTopItem.title = @"广州";
+    districtTopItem.subTitle = @"天河区";
+    [districtTopItem addTarget:self action:@selector(districtClick)];
+    self.districtItem = [[UIBarButtonItem alloc] initWithCustomView:districtTopItem];
     
     //排序
     YKHomeTopItem * sortTopItem = [YKHomeTopItem item];
-    UIBarButtonItem * sortItem = [[UIBarButtonItem alloc] initWithCustomView:sortTopItem];
-    [sortTopItem.iconButton setImage:[UIImage imageNamed:@"icon_sort"] forState:UIControlStateNormal];
-    [sortTopItem.iconButton setImage:[UIImage imageNamed:@"icon_sort_highlighted"] forState:UIControlStateHighlighted];
-    sortTopItem.titleLabel.text = @"排序";
-    sortTopItem.subTitleLabel.text = nil;
-    self.navigationItem.leftBarButtonItems = @[logoItem,categoryItem,districtItem,sortItem];
+    [sortTopItem setIcon:@"icon_sort" highIcon:@"icon_sort_highlighted"];
+    sortTopItem.title = @"排序";
+    sortTopItem.subTitle = nil;
+    [sortTopItem addTarget:self action:@selector(sortClick)];
+    self.sortItem = [[UIBarButtonItem alloc] initWithCustomView:sortTopItem];
+    
+    self.navigationItem.leftBarButtonItems = @[logoItem,self.categoryItem,self.districtItem,self.sortItem];
 }
 
 /**
@@ -88,6 +97,36 @@ static NSString * const reuseIdentifier = @"Cell";
     self.navigationItem.rightBarButtonItems = @[mapItem,searchItem];
 }
 #pragma mark - 导航栏事件处理
+/**
+ * 点击了类别
+ */
+- (void)categoryClick
+{
+    YKCategoryViewController * categoryVC = [[YKCategoryViewController alloc] init];
+    categoryVC.modalPresentationStyle = UIModalPresentationPopover;
+    categoryVC.popoverPresentationController.barButtonItem = self.categoryItem;
+    [self presentViewController:categoryVC animated:YES completion:nil];
+}
+/**
+ * 点击了区域
+ */
+- (void)districtClick
+{
+    YKDistrictViewController * districtVC = [[YKDistrictViewController alloc] init];
+    districtVC.modalPresentationStyle = UIModalPresentationPopover;
+    districtVC.popoverPresentationController.barButtonItem = self.districtItem;
+    [self presentViewController:districtVC animated:YES completion:nil];
+}
+/**
+ * 点击了分类
+ */
+- (void)sortClick
+{
+    YKSortViewController * sortVC = [[YKSortViewController alloc] init];
+    sortVC.modalPresentationStyle = UIModalPresentationPopover;
+    sortVC.popoverPresentationController.barButtonItem = self.sortItem;
+    [self presentViewController:sortVC animated:YES completion:nil];
+}
 /**
  * 点击搜索
  */

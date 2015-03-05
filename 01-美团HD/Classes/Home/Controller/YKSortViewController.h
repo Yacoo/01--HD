@@ -1,0 +1,13 @@
+//
+//  YKSortViewController.h
+//  01-美团HD
+//
+//  Created by yake on 15-3-3.
+//  Copyright (c) 2015年 yake. All rights reserved.
+// 排序控制器
+
+#import <UIKit/UIKit.h>
+
+@interface YKSortViewController : UIViewController
+
+@end
