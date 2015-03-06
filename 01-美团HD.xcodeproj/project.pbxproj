@@ -12,23 +12,13 @@
 		323398691A9DC1F700193540 /* _1___HDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323398681A9DC1F700193540 /* _1___HDTests.m */; };
 		323398811A9DC67400193540 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233987C1A9DC67400193540 /* AppDelegate.m */; };
 		323398821A9DC67400193540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233987F1A9DC67400193540 /* main.m */; };
-		32B11F6A1AA556E800590C1E /* YKSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B11F691AA556E800590C1E /* YKSortViewController.m */; };
-		32B11F6D1AA5570F00590C1E /* YKDistrictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B11F6C1AA5570F00590C1E /* YKDistrictViewController.m */; };
-		32B11F701AA5571C00590C1E /* YKCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B11F6F1AA5571C00590C1E /* YKCategoryViewController.m */; };
-		32B11F761AA55C0B00590C1E /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32B11F721AA55C0B00590C1E /* categories.plist */; };
-		32B11F771AA55C0B00590C1E /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32B11F731AA55C0B00590C1E /* cities.plist */; };
-		32B11F781AA55C0B00590C1E /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32B11F741AA55C0B00590C1E /* cityGroups.plist */; };
-		32B11F791AA55C0B00590C1E /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32B11F751AA55C0B00590C1E /* sorts.plist */; };
-		32B11F7C1AA55C7400590C1E /* YKSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B11F7B1AA55C7400590C1E /* YKSort.m */; };
 		32CEC7561A9F182B00960079 /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CEC7511A9F182B00960079 /* DPAPI.m */; };
 		32CEC7571A9F182B00960079 /* DPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CEC7531A9F182B00960079 /* DPConstants.m */; };
 		32CEC7581A9F182B00960079 /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CEC7551A9F182B00960079 /* DPRequest.m */; };
 		32D0EE291AA3F4EE00E29CFB /* YKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D0EE281AA3F4EE00E29CFB /* YKHomeViewController.m */; };
 		32D0EE2D1AA4009A00E29CFB /* YKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D0EE2C1AA4009A00E29CFB /* YKNavigationController.m */; };
 		32D0EE301AA4203600E29CFB /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D0EE2F1AA4203600E29CFB /* UIView+MJExtension.m */; };
-		32D0EE371AA433FF00E29CFB /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D0EE361AA433FF00E29CFB /* UIBarButtonItem+Extension.m */; };
-		32D0EE3A1AA4396E00E29CFB /* YKHomeTopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D0EE391AA4396E00E29CFB /* YKHomeTopItem.m */; };
-		32D0EE3E1AA439C400E29CFB /* YKHomeTopItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D0EE3D1AA439C400E29CFB /* YKHomeTopItem.xib */; };
+		32D0EE341AA430AF00E29CFB /* YKBarButtonItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D0EE331AA430AF00E29CFB /* YKBarButtonItemTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,18 +42,6 @@
 		3233987B1A9DC67400193540 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3233987C1A9DC67400193540 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3233987F1A9DC67400193540 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32B11F681AA556E800590C1E /* YKSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSortViewController.h; sourceTree = "<group>"; };
-		32B11F691AA556E800590C1E /* YKSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSortViewController.m; sourceTree = "<group>"; };
-		32B11F6B1AA5570F00590C1E /* YKDistrictViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKDistrictViewController.h; sourceTree = "<group>"; };
-		32B11F6C1AA5570F00590C1E /* YKDistrictViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKDistrictViewController.m; sourceTree = "<group>"; };
-		32B11F6E1AA5571C00590C1E /* YKCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKCategoryViewController.h; sourceTree = "<group>"; };
-		32B11F6F1AA5571C00590C1E /* YKCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKCategoryViewController.m; sourceTree = "<group>"; };
-		32B11F721AA55C0B00590C1E /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
-		32B11F731AA55C0B00590C1E /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
-		32B11F741AA55C0B00590C1E /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
-		32B11F751AA55C0B00590C1E /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
-		32B11F7A1AA55C7400590C1E /* YKSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSort.h; sourceTree = "<group>"; };
-		32B11F7B1AA55C7400590C1E /* YKSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSort.m; sourceTree = "<group>"; };
 		32CEC74C1A9F0E4600960079 /* YKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKSingleton.h; sourceTree = "<group>"; };
 		32CEC74D1A9F128100960079 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		32CEC7501A9F182B00960079 /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
@@ -78,11 +56,8 @@
 		32D0EE2C1AA4009A00E29CFB /* YKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKNavigationController.m; sourceTree = "<group>"; };
 		32D0EE2E1AA4203600E29CFB /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		32D0EE2F1AA4203600E29CFB /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		32D0EE351AA433FF00E29CFB /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
-		32D0EE361AA433FF00E29CFB /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
-		32D0EE381AA4396E00E29CFB /* YKHomeTopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKHomeTopItem.h; sourceTree = "<group>"; };
-		32D0EE391AA4396E00E29CFB /* YKHomeTopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKHomeTopItem.m; sourceTree = "<group>"; };
-		32D0EE3D1AA439C400E29CFB /* YKHomeTopItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YKHomeTopItem.xib; sourceTree = "<group>"; };
+		32D0EE321AA430AF00E29CFB /* YKBarButtonItemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKBarButtonItemTool.h; sourceTree = "<group>"; };
+		32D0EE331AA430AF00E29CFB /* YKBarButtonItemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKBarButtonItemTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +84,6 @@
 				3233984B1A9DC1F700193540 /* 01-美团HD */,
 				323398651A9DC1F700193540 /* 01-美团HDTests */,
 				3233984A1A9DC1F700193540 /* Products */,
-				4028242C4A5026FCC8D02126 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,7 +108,6 @@
 		3233984C1A9DC1F700193540 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				32B11F711AA55C0B00590C1E /* Plist */,
 				323398561A9DC1F700193540 /* Main.storyboard */,
 				323398591A9DC1F700193540 /* Images.xcassets */,
 				3233984D1A9DC1F700193540 /* Info.plist */,
@@ -183,12 +156,6 @@
 			children = (
 				32D0EE271AA3F4EE00E29CFB /* YKHomeViewController.h */,
 				32D0EE281AA3F4EE00E29CFB /* YKHomeViewController.m */,
-				32B11F681AA556E800590C1E /* YKSortViewController.h */,
-				32B11F691AA556E800590C1E /* YKSortViewController.m */,
-				32B11F6B1AA5570F00590C1E /* YKDistrictViewController.h */,
-				32B11F6C1AA5570F00590C1E /* YKDistrictViewController.m */,
-				32B11F6E1AA5571C00590C1E /* YKCategoryViewController.h */,
-				32B11F6F1AA5571C00590C1E /* YKCategoryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,8 +163,6 @@
 		323398781A9DC67400193540 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				32B11F7A1AA55C7400590C1E /* YKSort.h */,
-				32B11F7B1AA55C7400590C1E /* YKSort.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,9 +170,6 @@
 		323398791A9DC67400193540 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				32D0EE381AA4396E00E29CFB /* YKHomeTopItem.h */,
-				32D0EE391AA4396E00E29CFB /* YKHomeTopItem.m */,
-				32D0EE3D1AA439C400E29CFB /* YKHomeTopItem.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,8 +195,6 @@
 			children = (
 				32D0EE2E1AA4203600E29CFB /* UIView+MJExtension.h */,
 				32D0EE2F1AA4203600E29CFB /* UIView+MJExtension.m */,
-				32D0EE351AA433FF00E29CFB /* UIBarButtonItem+Extension.h */,
-				32D0EE361AA433FF00E29CFB /* UIBarButtonItem+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -245,17 +205,6 @@
 				32CEC74F1A9F182B00960079 /* DP */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		32B11F711AA55C0B00590C1E /* Plist */ = {
-			isa = PBXGroup;
-			children = (
-				32B11F721AA55C0B00590C1E /* categories.plist */,
-				32B11F731AA55C0B00590C1E /* cities.plist */,
-				32B11F741AA55C0B00590C1E /* cityGroups.plist */,
-				32B11F751AA55C0B00590C1E /* sorts.plist */,
-			);
-			path = Plist;
 			sourceTree = "<group>";
 		};
 		32CEC74F1A9F182B00960079 /* DP */ = {
@@ -283,15 +232,10 @@
 		32D0EE311AA4309200E29CFB /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				32D0EE321AA430AF00E29CFB /* YKBarButtonItemTool.h */,
+				32D0EE331AA430AF00E29CFB /* YKBarButtonItemTool.m */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		4028242C4A5026FCC8D02126 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 323398441A9DC1F700193540 /* Build configuration list for PBXProject "l" */;
+			buildConfigurationList = 323398441A9DC1F700193540 /* Build configuration list for PBXProject "01-美团HD" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -375,13 +319,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B11F761AA55C0B00590C1E /* categories.plist in Resources */,
-				32D0EE3E1AA439C400E29CFB /* YKHomeTopItem.xib in Resources */,
-				32B11F791AA55C0B00590C1E /* sorts.plist in Resources */,
 				323398581A9DC1F700193540 /* Main.storyboard in Resources */,
-				32B11F771AA55C0B00590C1E /* cities.plist in Resources */,
 				3233985A1A9DC1F700193540 /* Images.xcassets in Resources */,
-				32B11F781AA55C0B00590C1E /* cityGroups.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,16 +342,11 @@
 				32D0EE291AA3F4EE00E29CFB /* YKHomeViewController.m in Sources */,
 				32CEC7581A9F182B00960079 /* DPRequest.m in Sources */,
 				323398811A9DC67400193540 /* AppDelegate.m in Sources */,
-				32D0EE371AA433FF00E29CFB /* UIBarButtonItem+Extension.m in Sources */,
 				32D0EE2D1AA4009A00E29CFB /* YKNavigationController.m in Sources */,
-				32B11F6D1AA5570F00590C1E /* YKDistrictViewController.m in Sources */,
-				32B11F701AA5571C00590C1E /* YKCategoryViewController.m in Sources */,
-				32B11F6A1AA556E800590C1E /* YKSortViewController.m in Sources */,
 				323398821A9DC67400193540 /* main.m in Sources */,
 				32CEC7571A9F182B00960079 /* DPConstants.m in Sources */,
 				32D0EE301AA4203600E29CFB /* UIView+MJExtension.m in Sources */,
-				32D0EE3A1AA4396E00E29CFB /* YKHomeTopItem.m in Sources */,
-				32B11F7C1AA55C7400590C1E /* YKSort.m in Sources */,
+				32D0EE341AA430AF00E29CFB /* YKBarButtonItemTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,10 +465,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "01-美团HD/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "01-美团HD/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -545,10 +477,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "01-美团HD/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "01-美团HD/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -589,7 +519,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		323398441A9DC1F700193540 /* Build configuration list for PBXProject "l" */ = {
+		323398441A9DC1F700193540 /* Build configuration list for PBXProject "01-美团HD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3233986A1A9DC1F700193540 /* Debug */,
